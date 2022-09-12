@@ -1,12 +1,14 @@
 .new-tweet {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .tweet-entry {
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
-  margin: 15px;
 }
 
 textarea {
@@ -32,9 +34,8 @@ label {
   justify-content: space-between;
   font-family: 'Bungee', cursive;
 }
-#counter {
-  
-}
+
+#counter {}
 
 .tweet-button {
   background-color: #4056A1;

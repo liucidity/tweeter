@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="./styles/layout.css" type="text/css" />
   <link rel="stylesheet" href="./styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="./styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/tweet.css" type="text/css">
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -60,7 +61,7 @@
       <h2>Compose Tweet</h2>
       <form class="tweet-entry" action="/tweets" method="post">
         <label for="tweet-text">What are you humming about?</label>
-        <textarea name="text" id="tweet-text" rows="2"></textarea>
+        <textarea name="text" id="tweet-text" rows="1"></textarea>
         <div class="btn-counter">
           <button class="tweet-button" type="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
@@ -71,13 +72,13 @@
     <section>
       <article class="tweet">
         <header>
-          <div>
+          <div class="profile">
             <img src="https://via.placeholder.com/50/" />
-            <span>
+            <p>
               Travis
-            </span>
+            </p>
           </div>
-          <a>@LTC</a>
+          <a class="account-tag">@LTC</a>
         </header>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum rutrum sodales. Nullam mattis
@@ -87,10 +88,10 @@
           <time>
             10 days ago
           </time>
-          <div>
-            <span>l</span>
-            <span>f</span>
-            <span>r</span>
+          <div class="social-icons">
+            <i class="fa-solid fa-flag"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-heart"></i>
           </div>
         </footer>
       </article>
