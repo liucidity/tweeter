@@ -1,12 +1,12 @@
-.new-tweet {
+section.new-tweet {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 .tweet-entry {
-  margin-top: 25px;
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
 }
@@ -14,18 +14,14 @@
 textarea {
   background-color: #f4f1ec;
   resize: none;
-  border-top-width: 0px;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-bottom-width: 4px;
+  border-top-width: 0em;
+  border-left-width: 0em;
+  border-right-width: 0em;
+  border-bottom-width: 0.25em;
   border-bottom-color: black;
 
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-}
-
-label {
-  border-bottom-width: 200px;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .btn-counter {

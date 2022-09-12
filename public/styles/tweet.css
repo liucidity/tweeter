@@ -1,10 +1,10 @@
 article {
-  border-width: 5px;
+  border-width: 0.25em;
   border-style: solid;
 }
 
 article.tweet:hover {
-  box-shadow: 6px 7px 1px #406da184;
+  box-shadow: 0.2em 0.2em 0.02em #406da184;
 
 }
 
@@ -12,7 +12,7 @@ article.tweet header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  margin: 1em;
 
 }
 
@@ -23,47 +23,46 @@ article.tweet header {
 }
 
 .profile p {
-  margin: 10px;
-  font-size: 20px;
+  margin-left: 0.5em;
+  font-size: 1.0em;
 }
 
 .account-tag {
-  font-size: 20px;
   opacity: 50%;
 }
 
 article>p {
-  margin: 20px;
-  margin-bottom: 0px;
-  border-bottom-width: 4px;
-  padding-bottom: 20px;
+  margin: 1em;
+  margin-bottom: 0em;
+  border-bottom-width: 0.25em;
+  padding-bottom: 1em;
   border-bottom-style: solid;
-  font-size: 18px;
-  padding-left: 10px;
-  padding-right: 10px;
+  font-size: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 article.tweet footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
 }
 
 article time {
-  font-size: 11px;
+  font-size: 0.5em;
 }
 
 .social-icons {
-  font-size: 14px;
+  font-size: 0.75em;
   color: #4056A1;
 }
 
 .social-icons i {
-  margin: 4px;
+  margin: 0.25em;
 }
 
 .social-icons i:hover {
