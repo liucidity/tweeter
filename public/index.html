@@ -6,6 +6,7 @@
   <title>Tweeter - Home Page</title>
 
   <!-- External CSS -->
+  <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     type="text/css" />
 
@@ -28,6 +29,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- App JS -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script type="text/javascript" src="./scripts/client.js"></script>
   <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
 </head>
@@ -58,7 +60,7 @@
       <h2>Compose Tweet</h2>
       <form class="tweet-entry" action="/tweets" method="post">
         <label for="tweet-text">What are you humming about?</label>
-        <textarea name="text" id="tweet-text" maxlength="140" rows="2"></textarea>
+        <textarea name="text" id="tweet-text" rows="2"></textarea>
         <div class="btn-counter">
           <button class="tweet-button" type="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>

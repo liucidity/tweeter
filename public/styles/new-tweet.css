@@ -32,6 +32,9 @@ label {
   justify-content: space-between;
   font-family: 'Bungee', cursive;
 }
+#counter {
+  
+}
 
 .tweet-button {
   background-color: #4056A1;
