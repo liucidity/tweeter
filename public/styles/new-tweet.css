@@ -11,7 +11,7 @@ section.new-tweet {
   flex-direction: column;
 }
 
-textarea {
+#tweet-text {
   background-color: #f4f1ec;
   resize: none;
   border-top-width: 0em;
@@ -22,6 +22,16 @@ textarea {
 
   padding-bottom: 1em;
   margin-bottom: 1em;
+  height: 2em;
+  transition: all 0.3s ease;
+}
+
+#tweet-text:focus-visible {
+  outline: 0em;
+}
+
+#tweet-text:focus {
+  height: 4em;
 }
 
 .btn-counter {
@@ -31,7 +41,6 @@ textarea {
   font-family: 'Bungee', cursive;
 }
 
-#counter {}
 
 .tweet-button {
   background-color: #4056A1;
