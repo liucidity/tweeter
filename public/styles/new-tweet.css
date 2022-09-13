@@ -5,10 +5,12 @@ section.new-tweet {
   margin-top: 2em;
 }
 
+
 .tweet-entry {
   margin-top: 1em;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease;
 }
 
 #tweet-text {
@@ -22,7 +24,7 @@ section.new-tweet {
 
   padding-bottom: 1em;
   margin-bottom: 1em;
-  height: 2em;
+  height: 2.5em;
   transition: all 0.3s ease;
 }
 
@@ -30,8 +32,10 @@ section.new-tweet {
   outline: 0em;
 }
 
+/* clicking button area will close expansion */
+.tweet-entry:focus textarea,
 #tweet-text:focus {
-  height: 4em;
+  height: 5em;
 }
 
 .btn-counter {
