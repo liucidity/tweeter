@@ -13,6 +13,13 @@ const renderTweets = function (tweets) {
   }
 };
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
+
 const createTweetElement = function (tweet) {
   let tweets = `
   <article class="tweet">
@@ -26,7 +33,7 @@ const createTweetElement = function (tweet) {
     <a class="account-tag">${tweet.user.handle}</a>
   </header>
   <p>
-    ${tweet.content.text}
+    ${escape(tweet.content.text)}
   </p>
   <footer>
     <time>
@@ -52,28 +59,6 @@ const loadTweets = function () {
 };
 loadTweets();
 
-
-$(function () {
-  console.log('jquery ready');
-  $(".tweet-entry").submit(function (event) {
-    event.preventDefault();
-    if ($("#tweet-text").val().length > 140) {
-      alert("Hum is too long. Please limit to 140 characters");
-    } else if ($("#tweet-text").val() === null
-      || $("#tweet-text").val() === "") {
-      alert("Hum cannot be empty");
-    } else {
-      $.ajax({
-        url: "/tweets",
-        data: $(this).serialize(),
-        method: "POST"
-      }).done(() => {
-        this.reset();
-        loadTweets();
-      });
-    }
-  });
-});
 
 
 

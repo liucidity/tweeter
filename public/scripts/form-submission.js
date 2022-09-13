@@ -15,6 +15,7 @@ $(function () {
         data: $(this).serialize(),
         method: "POST"
       }).done(() => {
+        this.reset();
         loadTweets();
       });
     }
