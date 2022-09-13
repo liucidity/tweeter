@@ -1,3 +1,5 @@
+// const { loadTweets } = require("./client");
+
 $(function () {
   console.log('jquery ready');
   $(".tweet-entry").submit(function (event) {
@@ -11,10 +13,9 @@ $(function () {
       $.ajax({
         url: "/tweets",
         data: $(this).serialize(),
-        method: "POST",
-
-      }).done(function (data) {
-        console.log(data);
+        method: "POST"
+      }).done(() => {
+        loadTweets();
       });
     }
   });

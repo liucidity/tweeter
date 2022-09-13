@@ -5,9 +5,10 @@
  */
 
 const renderTweets = function (tweets) {
+
   for (let tweet of tweets) {
     $(function () {
-      $('#tweets-container').append(createTweetElement(tweet));
+      $('#tweets-container').prepend(createTweetElement(tweet));
     });
   }
 };
@@ -44,8 +45,36 @@ const createTweetElement = function (tweet) {
 const loadTweets = function () {
   $(function () {
     $.get('/tweets', (data) => {
+      $("#tweets-container article").remove();
       renderTweets(data);
     });
   });
 };
 loadTweets();
+
+
+$(function () {
+  console.log('jquery ready');
+  $(".tweet-entry").submit(function (event) {
+    event.preventDefault();
+    if ($("#tweet-text").val().length > 140) {
+      alert("Hum is too long. Please limit to 140 characters");
+    } else if ($("#tweet-text").val() === null
+      || $("#tweet-text").val() === "") {
+      alert("Hum cannot be empty");
+    } else {
+      $.ajax({
+        url: "/tweets",
+        data: $(this).serialize(),
+        method: "POST"
+      }).done(() => {
+        this.reset();
+        loadTweets();
+      });
+    }
+  });
+});
+
+
+
+// module.exports = { loadTweets };
