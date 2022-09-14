@@ -25,6 +25,8 @@
   <link rel="stylesheet" href="./styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="./styles/new-tweet.css" type="text/css" />
   <link rel="stylesheet" href="./styles/tweet.css" type="text/css">
+  <link rel="stylesheet" href="./styles/floating-button.css" type="text/css" />
+
 
   <!-- External JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
@@ -38,6 +40,7 @@
   <script type="text/javascript" src="./scripts/client.js"></script>
   <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
   <script type="text/javascript" src="./scripts/form-submission.js"></script>
+  <script type="text/javascript" src="./scripts/compose-tweet.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
 
@@ -49,6 +52,7 @@
       <span class="new-tweet"><b>Write</b> a new tweet</span>
       <span class="arrow" "><i class=" fa-solid fa-angles-down"></i></span>
     </div>
+
   </nav>
 
   <header>
@@ -107,7 +111,12 @@
         </footer>
       </article>
     </section>
+
+    <div class="container-float-button">
+      <span class="float-button"><i class=" fa-solid fa-angles-up"></i></span>
+    </div>
   </main>
+
 </body>
 
 </html>

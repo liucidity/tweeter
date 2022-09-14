@@ -2,6 +2,7 @@ article {
   border-width: 0.25em;
   border-style: solid;
   margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 article.tweet:hover {

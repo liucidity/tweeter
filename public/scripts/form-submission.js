@@ -1,4 +1,3 @@
-// const { loadTweets } = require("./client");
 
 $(function () {
   $(".error-message").hide();
@@ -29,8 +28,8 @@ $(function () {
         data: $(this).serialize(),
         method: "POST"
       }).done(() => {
-        this.reset();
         loadTweets();
+        this.reset();
       });
     }
   });

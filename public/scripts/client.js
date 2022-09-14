@@ -5,13 +5,11 @@
  */
 
 const renderTweets = function (tweets) {
-
   for (let tweet of tweets) {
-    $(function () {
-      $('#tweets-container').prepend(createTweetElement(tweet));
-    });
+    $('#tweets-container').prepend(createTweetElement(tweet));
   }
 };
+
 
 const escape = function (str) {
   let div = document.createElement("div");
@@ -21,7 +19,7 @@ const escape = function (str) {
 
 
 const createTweetElement = function (tweet) {
-  let tweets = `
+  let $tweets = $(`
   <article class="tweet">
   <header>
     <div class="profile">
@@ -45,14 +43,14 @@ const createTweetElement = function (tweet) {
       <i class="fa-solid fa-heart"></i>
     </div>
   </footer>
-</article>`;
-  return tweets;
+</article>`);
+  return $tweets;
 };
 
 const loadTweets = function () {
   $(function () {
     $.get('/tweets', (data) => {
-      $("#tweets-container article").remove();
+      $("#tweets-container").empty();
       renderTweets(data);
     });
   });
@@ -60,6 +58,3 @@ const loadTweets = function () {
 loadTweets();
 
 
-
-
-// module.exports = { loadTweets };

@@ -33,10 +33,10 @@ section.new-tweet {
 }
 
 /* clicking button area will close expansion */
-.tweet-entry:focus textarea,
+/* .tweet-entry:focus textarea,
 #tweet-text:focus {
   height: 5em;
-}
+} */
 
 .btn-counter {
   display: flex;
