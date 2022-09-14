@@ -34,6 +34,7 @@ article.tweet header {
 }
 
 article>p {
+  word-wrap: break-word;
   margin: 1em;
   margin-bottom: 0em;
   border-bottom-width: 0.25em;

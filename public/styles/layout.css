@@ -28,8 +28,6 @@ body {
 }
 
 
-
-
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
@@ -38,16 +36,28 @@ nav {
   font-family: 'Bungee', cursive;
 }
 
-body>header {
+body>div {
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-top: 120px;
   height: 520px;
   width: 100%;
-  flex-direction: column;
-  align-items: center;
+  font-size: 2em;
+  color: white;
   background-color: orange;
   background-image: url(../images/carbon-fibre-v2.png);
 }
+
+
 
 main {
   display: flex;
@@ -55,5 +65,34 @@ main {
   flex-direction: column;
   justify-content: center;
   background-color: #f4f1ec;
+  margin-top: 1em;
 
+}
+
+@media (min-width: 1024px) {
+
+  body>div {
+    padding-top: 120px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero {
+    align-self: flex-start;
+    margin-top: 1em;
+    padding-top: 0px;
+    height: 14em;
+    width: 30%;
+    font-size: 2em;
+    color: white;
+    background-color: orange;
+    background-image: url(../images/carbon-fibre-v2.png);
+  }
+
+  main {
+    width: 60%;
+    float: right;
+  }
 }

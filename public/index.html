@@ -52,70 +52,68 @@
       <span class="new-tweet"><b>Write</b> a new tweet</span>
       <span class="arrow" "><i class=" fa-solid fa-angles-down"></i></span>
     </div>
-
   </nav>
 
-  <header>
-    <div>
-      <img src="./images/profile-hex.png">
-    </div>
-    <br>
-    <div>
-      <h2>Your Name</h2>
-    </div>
-  </header>
-
-  <!-- Page-specific (main) content here -->
-  <main class="container">
-    <section class="new-tweet">
-      <h2>Compose Tweet</h2>
-      <div class="error-message">
-        <i class="fa-solid fa-triangle-exclamation"></i>
-        ERROR!
-        <i class="fa-solid fa-triangle-exclamation"></i>
+  <div class="body-container">
+    <header class="hero">
+      <div>
+        <img src="./images/profile-hex.png">
       </div>
-      <form class="tweet-entry" tabindex="-1">
-        <!-- <label for="tweet-text">What are you humming about?</label> -->
-        <textarea name="text" id="tweet-text" rows="1" placeholder="What are you humming about?"></textarea>
-        <div class="btn-counter">
-          <button class="tweet-button" type="submit">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
+      <br>
+      <div>
+        <h2><b>Your</b> Name</h2>
+      </div>
+    </header>
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <div class="error-message">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          ERROR!
+          <i class="fa-solid fa-triangle-exclamation"></i>
         </div>
-      </form>
-    </section>
-
-    <section id="tweets-container">
-      <article class="tweet">
-        <header>
-          <div class="profile">
-            <img src="https://via.placeholder.com/50/" />
-            <p>
-              Travis
-            </p>
+        <form class="tweet-entry" tabindex="-1">
+          <!-- <label for="tweet-text">What are you humming about?</label> -->
+          <textarea name="text" id="tweet-text" rows="1" placeholder="What are you humming about?"></textarea>
+          <div class="btn-counter">
+            <button class="tweet-button" type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
-          <a class="account-tag">@LTC</a>
-        </header>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum rutrum sodales. Nullam mattis
-          fermentum libero, non volutpat.
-        </p>
-        <footer>
-          <time>
-            10 days ago
-          </time>
-          <div class="social-icons">
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-        </footer>
-      </article>
-    </section>
-
-    <div class="container-float-button">
-      <span class="float-button"><i class=" fa-solid fa-angles-up"></i></span>
-    </div>
-  </main>
+        </form>
+      </section>
+      <section id="tweets-container">
+        <article class="tweet">
+          <header>
+            <div class="profile">
+              <img src="https://via.placeholder.com/50/" />
+              <p>
+                Travis
+              </p>
+            </div>
+            <a class="account-tag">@LTC</a>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum rutrum sodales. Nullam mattis
+            fermentum libero, non volutpat.
+          </p>
+          <footer>
+            <time>
+              10 days ago
+            </time>
+            <div class="social-icons">
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+      </section>
+      <div class="container-float-button">
+        <span class="float-button"><i class=" fa-solid fa-angles-up"></i></span>
+      </div>
+    </main>
+  </div>
 
 </body>
 
