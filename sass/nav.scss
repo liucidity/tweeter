@@ -1,0 +1,41 @@
+$heading-color: #4056A1;
+
+nav {
+  position: fixed;
+  height: 120px;
+  width: 100%;
+  background-color: $heading-color;
+  color: #FFFFFF;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .arrow {
+    color: red;
+    display: flex;
+    justify-content: center;
+  }
+
+  .right:hover {
+    cursor: pointer;
+  }
+
+  .new-tweet {
+    font-family: "Source Sans Pro", sans-serif;
+  }
+}
+
+@media (max-width: 1023px) {
+  nav {
+    background: transparent;
+  }
+}

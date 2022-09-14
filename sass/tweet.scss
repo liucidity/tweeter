@@ -6,7 +6,8 @@ article {
 }
 
 article.tweet:hover {
-  box-shadow: 0.2em 0.2em 0.02em rgba(64, 109, 161, 0.5176470588);
+  box-shadow: 0.2em 0.2em 0.02em #406da184;
+
 }
 
 article.tweet header {
@@ -14,6 +15,7 @@ article.tweet header {
   justify-content: space-between;
   align-items: center;
   margin: 1em;
+
 }
 
 .profile {
@@ -24,14 +26,14 @@ article.tweet header {
 
 .profile p {
   margin-left: 0.5em;
-  font-size: 1em;
+  font-size: 1.0em;
 }
 
 .account-tag {
   opacity: 50%;
 }
 
-article > p {
+article>p {
   word-wrap: break-word;
   margin: 1em;
   margin-bottom: 0em;

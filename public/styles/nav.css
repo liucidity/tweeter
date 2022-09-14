@@ -11,54 +11,25 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+nav .right {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+nav .arrow {
+  color: red;
+  display: flex;
+  justify-content: center;
+}
+nav .right:hover {
+  cursor: pointer;
+}
+nav .new-tweet {
+  font-family: "Source Sans Pro", sans-serif;
+}
 
 @media (max-width: 1023px) {
   nav {
     background: transparent;
   }
-}
-
-.right {
-  display: flex;
-  flex-direction: column;
-}
-
-.arrow {
-  color: red;
-  display: flex;
-  justify-content: center;
-  -webkit-animation: bounce 1s infinite;
-
-  @-webkit-keyframes bounce {
-    0% {
-      bottom: 5px;
-    }
-
-    25%,
-    75% {
-      bottom: 15px;
-    }
-
-    50% {
-      bottom: 20px;
-    }
-
-    100% {
-      bottom: 0;
-    }
-  }
-
-}
-
-.right {
-  padding: 1em;
-}
-
-nav .new-tweet {
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-
-.right:hover {
-  cursor: pointer;
 }

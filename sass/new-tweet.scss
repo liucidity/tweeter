@@ -5,6 +5,7 @@ section.new-tweet {
   margin-top: 2em;
 }
 
+
 .tweet-entry {
   margin-top: 1em;
   display: flex;
@@ -20,6 +21,7 @@ section.new-tweet {
   border-right-width: 0em;
   border-bottom-width: 0.25em;
   border-bottom-color: black;
+
   padding-bottom: 1em;
   margin-bottom: 1em;
   height: 2.5em;
@@ -35,12 +37,14 @@ section.new-tweet {
 #tweet-text:focus {
   height: 5em;
 } */
+
 .btn-counter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: "Bungee", cursive;
+  font-family: 'Bungee', cursive;
 }
+
 
 .tweet-button {
   background-color: #4056A1;
