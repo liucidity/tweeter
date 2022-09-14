@@ -9,8 +9,9 @@ $(function () {
   // $(".float-button").hide();
   $(window).scroll(function () {
     console.log($(window).scrollTop());
-    $("nav").css({ "opacity": 1 - $(window).scrollTop() / 400 });
-    $(".float-button").css({ "opacity": 0 + $(window).scrollTop() / 200 });
+
+    $("nav").css({ "opacity": 1 - $(window).scrollTop() / 100 });
+    $(".float-button").css({ "opacity": 0 + $(window).scrollTop() / 100 });
   });
 
   $(".float-button").click(function (e) {
