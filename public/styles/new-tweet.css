@@ -30,11 +30,6 @@ section.new-tweet {
   outline: 0em;
 }
 
-/* clicking button area will close expansion */
-/* .tweet-entry:focus textarea,
-#tweet-text:focus {
-  height: 5em;
-} */
 .btn-counter {
   display: flex;
   flex-direction: row;

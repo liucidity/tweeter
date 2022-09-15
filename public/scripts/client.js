@@ -10,7 +10,7 @@ const renderTweets = function (tweets) {
   }
 };
 
-
+//escape text to prevent xss
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
