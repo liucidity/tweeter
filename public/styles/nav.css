@@ -11,19 +11,23 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
 nav .right {
   display: flex;
   flex-direction: column;
   padding: 1em;
 }
+
 nav .arrow {
   color: red;
   display: flex;
   justify-content: center;
 }
+
 nav .right:hover {
   cursor: pointer;
 }
+
 nav .new-tweet {
   font-family: "Source Sans Pro", sans-serif;
 }
